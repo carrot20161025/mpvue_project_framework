@@ -1,0 +1,64 @@
+// 动态页面样式
+.dynamic {
+  .icon-list-box {
+    padding: 0 20rpx;
+    .icon-list {
+      padding: 20rpx 20rpx 0;
+      display: flex;
+      flex-wrap: wrap;
+      font-size: 24rpx;
+      color: rgb(51,51,51);
+      background: #fff;
+      .border_radius(10rpx);
+      li {
+        margin-left: 45rpx;
+        margin-bottom: 20rpx;
+        width: 100rpx;
+        &:nth-child(5n+1) {
+          margin-left: 0;
+        }
+        .icon-list-item-img {
+          width: 100rpx;
+          height: 100rpx;
+        }
+        p {
+          text-align: center;
+        }
+      }
+    }
+  }
+
+  .newest-hot-box {
+    margin: 20rpx auto;
+    display: flex;
+    width: 500rpx;
+    height: 80rpx;
+    line-height: 80rpx;
+    font-size: 28rpx;
+    background: rgba(255,255,255,1);
+    .border_radius(10rpx);
+    .separate-line {
+      color: #ddd;
+    }
+    .newest-hot-item {
+      padding: 0 80rpx;
+      width: 249rpx;
+    }
+    .newest, .hot {
+      border-bottom: 2px solid rgba(196,196,196,1);
+    }
+    .selected {
+      border-bottom: 2px solid rgba(255,51,52,1);
+    }
+    .newest > img {
+      margin-left: 5rpx;
+      width: 31rpx;
+      height: 18rpx;
+    }
+    .hot > img {
+      margin-left: 5rpx;
+      width: 17rpx;
+      height: 20rpx;
+    }
+  }
+}
