@@ -4,7 +4,8 @@
     "pages/mall/main",
     "pages/dynamic/main",
     "pages/find/main",
-    "pages/my/main"
+    "pages/my/main",
+    "pages/counter/main"
   ],
   "window": {
     "backgroundTextStyle": "light",
