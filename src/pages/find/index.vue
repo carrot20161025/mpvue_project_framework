@@ -34,7 +34,10 @@ export default {
       // })
       this.$router.goToExec({
         path:'/pages/counter/main',
-        query:{name: "lalala"}
+        query:{
+          name: "lalala",
+          age: 89
+        }
       });
       // goTo({
       //   path:'/pages/counter/main',
