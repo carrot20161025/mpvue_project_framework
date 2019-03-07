@@ -26,6 +26,9 @@
         <button @click="random">点击增加一个随机数</button>
       </p>
     </div>
+
+    <van-button round type="primary">测试 vant 主要按钮</van-button>
+    <van-icon name="chat" size="100rpx" color="red" info="99+" />
   </div>
 </template>
 

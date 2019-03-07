@@ -7,7 +7,7 @@
  * @param    {Boolean}  isReplace [是否是替换当前路径，用wx.redirectTo]
  * @return   {[type]}             [description]
  */
-const goToExec = (params = {}) => {
+const goTo = (params = {}) => {
   let {path,query,isReplace} = params;
   if(!path || path == '') {
     console.log('要跳转的path不能为空！');
@@ -18,20 +18,26 @@ const goToExec = (params = {}) => {
   
   query = query || {};
 
-  let tabBarArr = ['index','articleList','moodList','my'];
-  let isInTabBar = false;
+  let tabBarArr = ["/pages/index/main",
+    "/pages/mall/main",
+    "/pages/dynamic/main",
+    "/pages/find/main",
+    "/pages/my/main"];
+  let isInTabBar = tabBarArr.find(item => item === path);
 
-  for(let i = 0 ; i < tabBarArr.length ; i ++) {
-     // let lastPath = path.split('/').pop();
-     // path:'/pages/counter/main',
-     let lastPath = path.split('/').slice(-2, -1);
+  // for(let i = 0 ; i < tabBarArr.length ; i ++) {
+  //    // let lastPath = path.split('/').pop();
+  //    // path:'/pages/counter/main',
+  //    let lastPath = path.split('/').slice(-2, -1);
 
-     if(lastPath == tabBarArr[i]) {
-        isInTabBar = true;
-        break;
-     }
-  }
+  //    if(lastPath == tabBarArr[i]) {
+  //       isInTabBar = true;
+  //       break;
+  //    }
+  // }
  
+
+
   //跳转到tabbar,用 wx.switchTab({path:xxx}),且要用另外的方式传参
   if(isInTabBar) {
     //修改参数全局变量,传入了什么参数，就附加到全局的app.globalData.tabBarData身上，在目标页面也直接这样获取
@@ -78,6 +84,6 @@ const goBack = (delta) => {
 
 
 export default {
-  goToExec,
+  goTo,
   goBack
 }

@@ -32,7 +32,7 @@ export default {
       // wx.navigateTo({
       //   url:'/pages/counter/main?name=lalala'
       // })
-      this.$router.goToExec({
+      this.$router.goTo({
         path:'/pages/counter/main',
         query:{
           name: "lalala",

@@ -4,7 +4,7 @@
     <top-search :type="1"></top-search>
 
     <!-- <button type="primary" @click="getArtDetail">测试获取文章详情接口</button> -->
-
+    
     <div class="sq-list">
       <sq-list-item v-for="(item, index) in sqList" :key="index" :data="item"></sq-list-item>
     </div>

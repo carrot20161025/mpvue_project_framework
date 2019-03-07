@@ -2,7 +2,7 @@
 
 const config = {
   // 接口的根路径
-  baseUrl: 'https://api.novenblog.xin',
+  baseUrl: 'https://api.novenblog.xin',// https://m.yunhuiyuan.cn
   // 超时时间
   timeout: 5000,
   // 设置请求的 header

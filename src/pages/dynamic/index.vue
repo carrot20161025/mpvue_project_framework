@@ -6,7 +6,7 @@
     <!-- 图标组 -->
     <div class="icon-list-box mt20">
       <ul class="icon-list">
-        <li v-for="(item, index) in iconList" :key="index">
+        <li @click="goTo" v-for="(item, index) in iconList" :key="index">
           <img class="icon-list-item-img" :src="item.icon">
           <p class="mt10">{{item.title}}</p>
         </li>
@@ -138,6 +138,17 @@ export default {
 
   created () {
     
+  },
+  methods: {
+    goTo() {
+      this.$router.goTo({
+        path:'/pages/house/index/main',
+        query:{
+          name: "lalala",
+          age: 89
+        }
+      });
+    }
   }
 }
 </script>

@@ -4,8 +4,7 @@
     "pages/mall/main",
     "pages/dynamic/main",
     "pages/find/main",
-    "pages/my/main",
-    "pages/counter/main"
+    "pages/my/main"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -18,7 +17,7 @@
     "backgroundColor": "#fafafa",
     "selectedColor": "rgba(255,51,52,1)",
     "borderStyle": "white",
-
+    "selectedColor": "#e60708",
     "list": [
       {
         "text": "商圈",
@@ -46,38 +45,21 @@
         "iconPath": "/static/images/tabBarIcons/My-ashes@2x.png",
         "selectedIconPath": "/static/images/tabBarIcons/My-bright@2x.png"
       }
-    ],
-
-    "items": [
-      {
-        "name": "商圈",
-        "pagePath": "pages/index/main",
-        "icon": "/static/images/tabBarIcons/Homel-ashes@2x.png",
-        "activeIcon": "/static/images/tabBarIcons/Homel-bright@2x.png"
-      }, {
-        "name": "商城",
-        "pagePath": "pages/mall/main",
-        "icon": "/static/images/tabBarIcons/mall-ashes@2x.png",
-        "activeIcon": "/static/images/tabBarIcons/mall-bright@2x.png"
-      }, {
-        "name": "动态",
-        "pagePath": "pages/dynamic/main",
-        "icon": "/static/images/tabBarIcons/dynamic-ashes@2x.png",
-        "activeIcon": "/static/images/tabBarIcons/dynamic-bright@2x.png"
-      }, {
-        "name": "发现",
-        "pagePath": "pages/find/main",
-        "icon": "/static/images/tabBarIcons/found-ashes@2x.png",
-        "activeIcon": "/static/images/tabBarIcons/found-bright@2x.png"
-      }, {
-        "name": "我的",
-        "pagePath": "pages/my/main",
-        "icon": "/static/images/tabBarIcons/My-ashes@2x.png",
-        "activeIcon": "/static/images/tabBarIcons/My-bright@2x.png"
-      }
-    ],
-
-    "selectedColor": "#e60708",
-    "position": "bottom"
-  }
+    ]
+  },
+  "subPackages": [
+    {
+      "root": "pages/house/",
+      "pages": [
+        "index/main",
+        "detail/main"
+      ]
+    },
+    {
+      "root": "pages/counter/",
+      "pages": [
+        "main"
+      ]
+    }
+  ]
 }
